@@ -28,6 +28,7 @@ type Position struct {
 	Type      Type
 }
 
+// maybe it would be simpler if we just serialize it as JSON?
 func (p Position) ToRecordPosition() sdk.Position {
 	char := snapshotPrefixChar
 	if p.Type == TypeCDC {

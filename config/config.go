@@ -1,3 +1,5 @@
+// maybe use a single package?
+// set up workflows (build, test, lint etc.)
 package config
 
 import (
@@ -9,6 +11,7 @@ import (
 )
 
 const (
+	// maybe shorten?
 	ConfigKeyGoogleCloudServiceAccountKey = "serviceAccountKey"
 	ConfigKeyGoogleCloudStorageBucket     = "bucket"
 )

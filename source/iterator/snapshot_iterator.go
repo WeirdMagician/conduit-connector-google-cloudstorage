@@ -11,6 +11,10 @@ import (
 	sdk "github.com/conduitio/conduit-connector-sdk"
 )
 
+// would it be possible to actually reuse the S3 connector?
+// i.e. import as a library and use it as such?
+// GCS and S3 are built pretty much on same concepts.
+// also, it would be good if we would have tests for the functionality here (integration tests maybe too)
 // SnapshotIterator to iterate through GoogleCloudStorage objects in a specific bucket.
 type SnapshotIterator struct {
 	bucket string

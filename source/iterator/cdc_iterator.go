@@ -17,6 +17,7 @@ import (
 )
 
 // CDCIterator scans the bucket periodically and detects changes made to it.
+// it would be good if we would have tests for the functionality here (integration tests maybe too)
 type CDCIterator struct {
 	bucket        string
 	client        *storage.Client
