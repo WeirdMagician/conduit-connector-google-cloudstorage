@@ -10,6 +10,7 @@ func TestConfigureSource_FailsWhenConfigEmpty(t *testing.T) {
 	con := Source{}
 	err := con.Configure(context.Background(), make(map[string]string))
 
+	// you have a variable for this error "ErrEmptyConfig", use errors.is instead of string comparing
 	if !strings.HasPrefix(err.Error(), "missing or empty config") {
 		t.Errorf("expected error to be about missing config, got %v", err)
 	}
@@ -19,6 +20,7 @@ func TestConfigureSource_FailsWhenConfigInvalid(t *testing.T) {
 	con := Source{}
 	err := con.Configure(context.Background(), map[string]string{"foobar": "foobar"})
 
+	// same comments as above
 	if !strings.HasSuffix(err.Error(), "config value must be set") {
 		t.Errorf("expected error to be some config value must be set, got %v", err)
 	}
@@ -32,3 +34,5 @@ func TestTeardownSource_NoOpen(t *testing.T) {
 		t.Errorf("expected no error but, got %v", err)
 	}
 }
+
+// add more tests

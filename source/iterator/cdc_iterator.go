@@ -1,3 +1,7 @@
+// todo: is this the best way to get CDC records from GCS?
+// please do some research about this and decide which approach for getting cdc events is the best in this case
+// a GCS notification service? a pup/sub service? maybe check this https://cloud.google.com/storage/docs/pubsub-notifications
+
 package iterator
 
 import (
