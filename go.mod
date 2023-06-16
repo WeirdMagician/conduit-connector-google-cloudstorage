@@ -7,7 +7,7 @@ require (
 	github.com/conduitio/conduit-connector-sdk v0.6.0
 	github.com/google/uuid v1.3.0
 	go.uber.org/goleak v1.2.1
-	google.golang.org/api v0.127.0
+	google.golang.org/api v0.128.0
 	gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637
 )
 
