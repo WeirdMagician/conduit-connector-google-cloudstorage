@@ -3,7 +3,7 @@ module github.com/conduitio/conduit-connector-google-cloudstorage
 go 1.18
 
 require (
-	cloud.google.com/go/storage v1.33.0
+	cloud.google.com/go/storage v1.34.1
 	github.com/conduitio/conduit-connector-sdk v0.7.2
 	github.com/google/uuid v1.4.0
 	go.uber.org/goleak v1.3.0
