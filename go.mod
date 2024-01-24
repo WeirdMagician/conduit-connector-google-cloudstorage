@@ -5,7 +5,7 @@ go 1.18
 require (
 	cloud.google.com/go/storage v1.36.0
 	github.com/conduitio/conduit-connector-sdk v0.7.2
-	github.com/google/uuid v1.5.0
+	github.com/google/uuid v1.6.0
 	go.uber.org/goleak v1.3.0
 	google.golang.org/api v0.157.0
 	gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637
